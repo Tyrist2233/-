@@ -1,0 +1,204 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+    height: 100%;
+}
+.space{
+    
+    height: 100vh;
+}
+.info{
+    padding: 10px;
+    height: 100%;
+    background-color: #ff7f50
+}
+.page {
+    min-height: 100%;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 50px #000;
+    display: flex;
+    flex-direction: column;
+}
+.page::before{
+    content: '';
+    position: fixed; 
+    left: 0; right: 0; 
+    top: 0; bottom: 0; 
+    z-index: -2; 
+    background: url(images/palmipoluchshe.jpg) center / cover no-repeat;
+    filter: blur(2px); 
+}
+.content {
+    flex: 1 1 auto;
+}
+.login {
+    height: 100vh;
+    
+}
+.login__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login__circle{
+    position: fixed;
+    z-index: -1;
+    min-height: 900px;
+    min-width: 900px;
+    border-radius: 50%;
+    background-color: #05ac9b;
+    box-shadow: inset 0px 0px 100px #000;
+}
+.login__body {
+    background-color:#05ac9b;
+    margin: 5px;
+    max-width: 400px;
+    width: 100%;
+    min-height: 220px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 5px #000;
+}
+.login__body input {
+   border-radius: 5px;
+   max-width: 300px;
+   width: 100%;
+   height: 30px;
+}
+.login__title {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+.login__column {
+    display: flex;
+    flex-direction: column;  
+}
+.login__column input{
+    box-shadow: 0px 0px 10px #000;
+    padding: 0px 0px 0px 5px;
+}
+.login__column input:hover {
+    box-shadow: 0px 0px 10px #ffffff;
+}
+.login__log {
+    margin: 10px 0;
+}
+.login__log input {
+    
+}
+.login__pas {
+  margin: 0px 0px 15px 0px;  
+}
+.login__button{
+    padding: 15px 0px 10px 0px;
+}
+.login__button input{
+    height: 45px;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #d40733;
+    color: #fff;
+}
+.login__button input:hover{
+    cursor: pointer;
+}
+
+.header__menu {
+    
+}
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    
+}
+.header__list li {
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+}
+.header__link {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__link.main_link{
+    color: #fff;
+}
+
+.main_menu{
+    max-width: 900px;
+}
+
+.main_list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_list li {
+    padding: 5px;
+    background-color: #d40733;
+    height: 50px;
+    min-width: 170px;
+    max-width: 300px;
+    display: flex;
+    flex: 0 0 50%;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.main_list li:hover{
+    box-shadow: 0px 0px 10px #000;
+    cursor: pointer;
+}
+
+.main_list li:nth-child(odd){
+    margin-left: 0px;
+}
+
+.main_list li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
